@@ -1,6 +1,6 @@
 os:
   - linux
-  - osx
+  # - osx
 
 sudo: false
 env:
@@ -13,11 +13,12 @@ rvm:
   - 2.5.8
   - 2.6.6
   - 2.7.1
+  - truffleruby-head
 
 gemfile:
   - gemfiles/no_rails.gemfile
-  - gemfiles/rails_5.gemfile
-  - gemfiles/rails_6.gemfile
+  # - gemfiles/rails_5.gemfile
+  # - gemfiles/rails_6.gemfile
 
 matrix:
   fast_finish: true
